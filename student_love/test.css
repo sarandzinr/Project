@@ -1,0 +1,320 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+a{
+ text-decoration: none;
+}
+
+p{
+ font-size: 12px;
+}
+
+header{
+ background-color: #673CE8;
+}
+
+.container{
+ width: 80%;
+ margin: 0px auto;
+}
+
+.header_wraper{
+ display: flex;
+ justify-content: space-between;
+ color: white;
+ padding: 20px 0px;
+}
+
+/* Method 1 */
+.header_wraper nav a{
+ color: white;
+ /* margin-right: 20px; */
+}
+
+/* .header_wraper nav a:nth-child(3){
+ margin-right: 0px;
+} */
+
+/* Method 2 */
+
+/* .header_wraper nav{
+ width: 25%;
+ display: flex;
+ justify-content: space-between;
+} */
+
+/* Method 3 */
+
+.header_wraper nav {
+ display: flex;
+ gap: 20px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+.banner{
+ background-color: #F5F5F5
+}
+
+.banner_wraper{
+ display: flex;
+ align-items: center;
+ /* width: 100%; */
+ padding: 50px 0;
+}
+
+.banner_wraper>div{
+ width: 50%;
+}
+
+/* .content{
+ width: 60%;
+}
+.img1{
+ width: 40%;
+} otehr method ----------------*/
+
+.banner_wraper>div:nth-child(2) img{  /*epvomey ipdi kudukalana image oda actual size ena iruko athan eduthukum so child 100percen and parent namaku evolo space venumo akuduthukalam ex 30% 40% */
+ width: 100%;
+}
+
+
+.banner_wraper h1{
+ font-size: 48px;
+ font-weight: 500;
+ line-height: 70px;
+}
+
+.banner_wraper p{
+ margin: 20px 0;
+}
+
+/* 2 button */
+.banner_wraper>div>div{
+ display: flex;
+ gap: 70px;
+ align-items: center;
+ 
+}
+
+/* or below use */
+
+/* .banner_wraper>div:nth-child(1)>div{
+
+ display: flex;
+ gap: 70px;
+ align-items: center;
+ 
+} */
+
+
+
+.banner_wraper>div>div>a:first-child{
+ color: aliceblue;
+ background-color: #FEA92B;
+ padding: 15px 30px;
+ border-radius: 10px;
+ box-shadow: 2px 2px 15px 0px #E59114;
+}
+
+.banner_wraper>div>div>a:last-child{
+ color: rgb(10, 10, 10);
+ font-weight: 600;
+}
+
+
+/* ------------------------------------------Jobs------------------------------------------------------- */
+
+.Jobs{
+ background-color:  #F5F5F5 ;
+ padding: 50px 0px;
+}
+
+.jobs_wraper{
+ display: flex;
+ color: #ffffff;
+ gap: 20px;
+
+}
+
+.jobs_wraper>div{
+ padding: 20px;
+ border-radius: 20px;
+ flex-grow: 1;
+}
+
+
+
+.jobs_wraper>div:first-child{
+ background-color: #0D435B;
+}
+
+.jobs_wraper>div:nth-child(2){
+ background-color: #5B2D99;
+}
+
+.jobs_wraper>div:last-child{
+ background-color: #7E3218;
+}
+
+.jobs_wraper>div>div{
+ display: flex;
+ gap: 40px;
+ align-items: center;
+ margin-top: 15px; 
+}
+
+/* we below i use div span means ula iruka ela span kum sme font veikaraku*/
+.jobs_wraper>div span{
+ font-size: 12px;
+}
+
+/* .jobs_wraper>div>div a{  note: ("div space a ")ipdi pota ula iruka elam a tag kuk apply..jagan using this method */
+
+.jobs_wraper>div>div>a{
+ color: #ffffff;
+ padding: 10px 15px;
+ border-radius: 12px;
+ border: 1px solid #ffffff;
+ font-size: 12px;
+ background-color: transparent;
+ transition: all .30s;
+}
+/* onu onu kum ovoru color for link tag */
+/* .jobs_wraper>div:nth-child(1)>div>a{
+ color: #F5F5F5;
+} */
+
+.jobs_wraper>div>div>a:hover{
+ background-color: #E59114;
+ color: #333333;
+ 
+}
+
+
+.jobs_wraper>div>h4{
+ margin: 15px 0px;
+}
+
+.jobs_wraper>div>p{
+ margin: 15px 0px;
+}
+
+footer{
+ background-color: #F5F5F5;
+ text-align: center;
+ padding: 20px 0px;
+ background-color: #dfdfdf;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 768px) {
+
+      /* .header_wraper{
+        display: block;
+      }
+
+      .header_wraper h4{
+        display: flex;
+        justify-content: center;
+
+      }
+
+      .header_wraper nav{
+        justify-content: center;
+        
+      } */
+
+/* method -2 */
+
+      /* .header_wraper{
+        flex-direction: column;
+
+      }
+
+      .header_wraper h4{
+        display: flex;
+        justify-content: center;
+      }
+
+      .header_wraper nav{
+        justify-content: center;
+
+      } */
+/* method-3 */
+
+      .header_wraper{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+ /* method555 */
+      
+      /* .header_wraper{
+        display: block;
+        text-align: center;
+      }
+      
+      .header_wraper nav{
+        margin-top:10px;
+        justify-content: center;
+      } */
+
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+  .banner_wraper{
+    flex-direction: column;
+  }
+
+  .banner_wraper>div{
+    width: 100%;
+ }
+
+ .banner_wraper>div>h1{
+  font-size: 35px;
+ }
+}
+
+@media only screen and (max-width: 768px){
+  .jobs_wraper{
+   flex-wrap: wrap;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

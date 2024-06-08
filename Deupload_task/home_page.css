@@ -1,0 +1,258 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700 !important; /* Use !important to ensure it overrides Bootstrap */
+    margin-bottom: 0px !important;
+}
+div{
+    padding: 0px 0px !important;
+}
+
+p{
+    font-size: 18px;
+    margin-bottom: 0px !important;
+
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.my-btn>a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    max-width: 1400px;
+    margin: 0px auto;
+}
+.inside-containers{
+    max-width: 1130px;
+
+    margin: 0px auto;
+}
+
+.my-btn{
+    display: inline-flex;
+    gap: 30px;
+   
+}
+
+.my-btn>a:first-child{
+    padding: 8px 25px;
+    /* background-color: #ffffff; */
+    color: rgb(20, 20, 20);
+    font-weight: 600;
+    outline: 3px solid #222222;
+    border-radius: 10px;
+    
+}
+
+.my-btn>a:last-child{
+    padding: 8px 25px;
+    background-color: #651FFF;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+/* ================================================= */
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.banner{
+    background-color: #EBE5FA;
+}
+
+.banner-wrapper>h1{
+    font-weight: 700;
+}
+
+.banner-wrapper>h1>span>span{
+    color: #651FFF;
+}
+
+@media only screen and (max-width: 578px) {
+   header>div:first-child{
+    flex-direction: column;
+    gap: 30px;
+   }
+
+}
+
+
+/* ===============================      Lightining    start         ======================================================== */
+
+.lightning{
+    background-color:  #e8fae5;
+}
+
+/* ===============================      Lightining    End        ======================================================== */
+
+/* ===============================      Decentralization  start        ======================================================== */
+
+.Decentralization{
+    background-color: #EBEEFF;
+}
+
+.Decentralization-wrapper>div>div>div{
+    background-color: #651FFF;
+    border-radius: 20px;
+    color: #ffffff;
+    max-width: 417px;
+
+}
+
+.Decentralization-wrapper>div>div>div>p{
+    font-size: 16px;
+    min-height: 120px;
+}
+/* .Decentralization-wrapper>div>div>div{
+    width: 95%;
+} */
+
+
+.Decentralization-wrapper>div>div>div>div>a{
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.Decentralization-wrapper>div>div>div>div>a>span{
+    font-weight: 600;
+}
+
+/* ===============================      Decentralization  end       ======================================================== */
+
+
+
+/* ===============================      .Lightweight start       ======================================================== */
+
+.Lightweight{
+    background-color: #EBEEFF;
+}
+
+.Lightweight-wrapper>div:nth-child(1)>h2>span:last-child{
+    color: #651FFF;
+}
+
+.Lightweight-wrapper>div:nth-child(2)>div:nth-child(1)>div{
+    background-color: #FFF7ED;
+    max-width: 540px;
+    border-radius: 40px;
+}
+
+.Lightweight-wrapper>div:nth-child(2)>div>div>h3{
+    color: #651FFF;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.Lightweight-wrapper>div:nth-child(2)>div:nth-child(2)>div{
+    background-color: #E0F7FA;
+    max-width: 540px;
+    border-radius: 40px;
+}
+
+@media only screen and (min-width: 1100px) {
+    .Lightweight-wrapper>div:nth-child(2)>div:nth-child(1)>div{
+        background-color: #FFF7ED;
+        min-width: 520px;
+        border-radius: 40px;
+    }
+
+    .Lightweight-wrapper>div:nth-child(2)>div:nth-child(2)>div{
+        background-color: #E0F7FA;
+        min-width: 520px;
+        border-radius: 40px;
+    }
+    
+ }
+ 
+/* ===============================      .Lightweight end       ======================================================== */
+
+
+/* ===============================      team start       ======================================================== */
+
+
+.team-wrapper>div{
+    background-color: #ECECFE;
+    border-radius: 20px;
+}
+
+.target-color>span:nth-child(1){
+    color: #651FFF;
+}
+
+/* ===============================      team end       ======================================================== */
+
+
+
+/* ===============================      better privacy  start       ======================================================== */
+
+.better-privacy-wrapper>div>div:nth-child(2)>div>div{
+    background-color:#ECECFE;
+    border-radius: 20px;
+}
+
+
+@media only screen and (min-width: 300px){
+    .better-privacy-wrapper>div>div:nth-child(1)>div{
+        min-height: 750px;
+    }
+
+}
+
+@media only screen and (min-width: 550px){
+    .better-privacy-wrapper>div>div:nth-child(1)>div{
+        min-height: 500px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px){
+    .better-privacy-wrapper>div>div:nth-child(1)>div{
+        min-height: 600px;
+    }
+
+}
+
+/* ====================== */
+
+@media only screen and (min-width: 300px){
+    .better-privacy-wrapper>div>div:nth-child(2)>div{
+        min-height: 800px;
+    }
+
+}
+
+@media only screen and (min-width: 550px){
+    .better-privacy-wrapper>div>div:nth-child(2)>div{
+        min-height: 500px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px){
+    .better-privacy-wrapper>div>div:nth-child(2)>div{
+        min-height: 600px;
+    }
+
+}
+
+
+/* ===============================     better privacy  end       ======================================================== */
